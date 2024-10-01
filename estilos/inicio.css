@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+    background-color: var(--azul);
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+    .editarRegiao {
+      margin-left: auto;
+    }
+
+  .conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+    .conteudo .cartao {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      border: 2px solid var(--cinza);
+      border-radius: 15px;
+    }
+
+      .conteudo .rio {
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .conteudo .rio .rioVetor {
+        background-color: var(--azul);
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+      }
+
+        .conteudo .rio .rioVetor::after {
+          content: '';
+          position: absolute;
+          top: -40%;
+          width: 100%;
+          background-image: url(../assets/rio.svg);
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background-size: contain;
+          z-index: 1;
+          height: 40px;
+        }
+
+  .cartao img {
+    filter: saturate(0) opacity(0.5);
+  }
+
+  .risco1 img:nth-child(2), .risco1 img:nth-child(3) {
+    filter: none;
+  }
+
+  .risco2 img:nth-child(2), .risco1 img:nth-child(3) {
+    filter: none;
+  }
+
+  .espacoBranco {
+    height: 150px;
+  }
+  
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 2px;
+    background-color: gray;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  footer div {
+    height: 100%;
+    width: 25%;
+    background-color: white;
+    border-top: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    footer img {
+      height: 80%;
+    }
+  

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="estilos/estilosGerais.css">
+    <link rel="stylesheet" type="text/css" href="estilos/inicio.css">
+
+    <title>Início</title>
+</head>
+<body>
+    <header>
+        <img src="assets/localBranco.svg" alt="local">
+        <div class="titulo">
+            <h1>Nome da cidade</h1>
+            <span>Risco alto</span>
+        </div>
+        <div class="editarRegiao">
+            <img src="assets/lapisBranco.svg" alt="lapis">
+        </div>
+      </header>
+      
+      <div class="conteudo">
+        <div class="cartao incendio">
+            <div>
+                <h2>Incêndio</h2>
+                <p>Sem risco</p>
+            </div>
+
+            <div>
+                <img src="assets/fogo.svg" alt="fogo">
+                <img src="assets/fogo.svg" alt="fogo">
+                <img src="assets/fogo.svg" alt="fogo">
+            </div>
+        </div>
+
+        <div class="cartao incendio semRisco">
+            <div>
+                <h2>Enchente</h2>
+                <p>Sem risco</p>
+            </div>
+
+            <div>
+                <img src="assets/agua.svg" alt="agua">
+                <img src="assets/agua.svg" alt="agua">
+                <img src="assets/agua.svg" alt="agua">
+            </div>
+        </div>
+
+        <div class="cartao incendio semRisco">
+            <div>
+                <h2>Tempestade</h2>
+                <p>Sem risco</p>
+            </div>
+
+            <div>
+                <img src="assets/nuvem.svg" alt="nuvem">
+                <img src="assets/nuvem.svg" alt="nuvem">
+                <img src="assets/nuvem.svg" alt="nuvem">
+            </div>
+        </div>
+
+        <div class="cartao rio">
+            <span><span>valor</span> (LIMITE)</span>
+            <span><span>valor</span> (ATUAL)</span>
+
+            <div class="rioVetor"></div>
+        </div>
+
+        <div class="espacoBranco"></div>
+      </div>
+      
+      <footer>
+        <div class='inicio'>
+          <img src="assets/casaCinza.svg" alt="casaIcon">
+          <span>Início</span>
+        </div>
+        
+        <div class='enchente'>
+          <img src="assets/aguaCinza.svg" alt="aguaIcon">
+          <span>Enchentes</span>
+        </div>
+        
+        <div class='incendio'>
+          <img src="assets/fogoCinza.svg" alt="fogoIcon">
+          <span>Incêndio</span>
+        </div>
+        
+        <div class='tempestade'>
+          <img src="assets/nuvemCinza.svg" alt="nuvemIcon">
+          <span>Tempestade</span>
+        </div>
+      </footer>
+
+
+
+    <div style="display: none;" class="login">
+        <div class="container">
+            <label for="regiao">Escolha sua região:</label>
+            <select id="regiao">
+                <option value="1">Vale do Taquari</option>
+                <option value="2">Outra região</option>
+            </select>
+    
+            <label for="cidade">Escolha sua cidade</a>
+            <select id="cidade">
+                <option value="sim">Paverama</option>
+                <option value="nao">Teutônia</option>
+                <option value="">Estrela</option>
+                <option value="">Lajeado</option>
+            </select>
+        </div>
+    </div>
+    
+<!-- MAPA ---------
+    <div id="map" style="height: 500px;"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+    var map = L.map('map').setView([0, 0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Carrega o arquivo JSON
+    fetch('disasters.json')
+        .then(response => response.json())
+        .then(data => {
+        data.forEach(disaster => {
+            L.marker([disaster.lat, disaster.lon])
+            .addTo(map)
+            .bindPopup("Perigo: " + disaster.type)
+            .openPopup();
+        });
+        })
+        .catch(error => console.error('Erro ao carregar os dados:', error));
+    </script>-->
+
+
+</body>
+</html>

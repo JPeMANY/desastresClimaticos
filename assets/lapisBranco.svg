@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="19.464409mm"
+   height="19.464409mm"
+   viewBox="0 0 19.464409 19.464409"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="lapisBranco.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.1575153"
+     inkscape:cx="-123.97244"
+     inkscape:cy="-6.9113555"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-137.84792,-153.98749)">
+    <path
+       id="path11"
+       style="font-variation-settings:normal;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4769;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none"
+       d="M 147.58014 153.98749 A 9.7322044 9.7322044 0 0 0 137.84792 163.71971 A 9.7322044 9.7322044 0 0 0 147.58014 173.45193 A 9.7322044 9.7322044 0 0 0 157.31236 163.71971 A 9.7322044 9.7322044 0 0 0 147.58014 153.98749 z M 149.93039 159.50808 L 151.79177 161.36947 L 150.93188 162.22936 L 149.07049 160.36798 L 149.93039 159.50808 z M 148.81108 160.62739 L 150.67246 162.48878 L 146.11253 167.04819 L 144.25166 165.18732 L 148.81108 160.62739 z M 143.99173 165.44674 L 145.85312 167.30812 L 143.36851 167.93134 L 143.99173 165.44674 z " />
+  </g>
+</svg>
