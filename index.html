@@ -117,30 +117,5 @@
         </div>
     </div>
     
-<!-- MAPA ---------
-    <div id="map" style="height: 500px;"></div>
-
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-    var map = L.map('map').setView([0, 0], 2);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    // Carrega o arquivo JSON
-    fetch('disasters.json')
-        .then(response => response.json())
-        .then(data => {
-        data.forEach(disaster => {
-            L.marker([disaster.lat, disaster.lon])
-            .addTo(map)
-            .bindPopup("Perigo: " + disaster.type)
-            .openPopup();
-        });
-        })
-        .catch(error => console.error('Erro ao carregar os dados:', error));
-    </script>-->
-
-
 </body>
 </html>
