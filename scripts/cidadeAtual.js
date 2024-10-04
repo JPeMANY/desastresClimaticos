@@ -1,5 +1,5 @@
 const regiao = 'Vale Do Taquari';
-const cidade = 'Lajeado';
+const cidade = 'Muçum';
 
 const titulo = document.querySelector('header .titulo h1');
 const subtitulo = document.querySelector('header .titulo span');
