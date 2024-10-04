@@ -1,0 +1,11 @@
+{
+        "incendio": "Risco 3",
+        "enchente": "Risco 2",
+        "tempestade": "Risco 0",
+        "rio": "Rio Taquari",
+        "alturaLimite": "19 metros",
+        "alturaAtual": "14 metros",
+        "fronteira": [
+          "Estrela"," Canudos do Vale"," Teut?nia"," Imigrante"," Westfalia"
+        ]
+      }
