@@ -1,7 +1,10 @@
 {
-    "rio": "não",
-    "alturaLimite": "N/A",
-    "alturaAtual": "N/A",
+    "incendio": "Risco 3",
+    "enchente": "Risco 2",
+    "tempestade": "Risco 1",
+    "rio": "false",
+    "alturaLimite": "",
+    "alturaAtual": "",
     "fronteira": [
         "Tabaí",
         "Taquari",

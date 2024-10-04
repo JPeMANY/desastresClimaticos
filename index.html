@@ -16,7 +16,7 @@
             <img src="assets/localBranco.svg" alt="local">
             <div class="titulo">
                 <h1>Nome da cidade</h1>
-                <span>Sem risco</span>
+                <span>Região</span>
             </div>
             <div class="editarRegiao">
                 <img src="assets/lapisBranco.svg" alt="lapis">
@@ -27,7 +27,7 @@
       <div class="espacoInicial"></div>
       
       <div class="conteudo">
-        <div class="cartao incendio">
+        <div id="cartaoIncendio" class="cartao incendio">
             <div>
                 <h2>Incêndio</h2>
                 <p>Sem risco</p>
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class="cartao incendio semRisco">
+        <div id="cartaoEnchente" class="cartao enchente">
             <div>
                 <h2>Enchente</h2>
                 <p>Sem risco</p>
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="cartao incendio semRisco">
+        <div id="cartaoTempestade" class="cartao tempestade">
             <div>
                 <h2>Tempestade</h2>
                 <p>Sem risco</p>
@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <div class="cartao rio">
+        <div id="cartaoRio" class="cartao rio">
             <span><span>valor</span> (LIMITE)</span>
             <span><span>valor</span> (ATUAL)</span>
 
@@ -120,5 +120,7 @@
 
     <script src="scripts/inicio.js"></script>
     <script src="scripts/login.js"></script>
+
+    <script src="scripts/cidadeAtual.js"></script>
 </body>
 </html>
