@@ -1,0 +1,11 @@
+{
+        "incendio": "Risco 1",
+        "enchente": "Risco 3",
+        "tempestade": "Risco 2",
+        "rio": "Rio Taquari",
+        "alturaLimite": "18 metros",
+        "alturaAtual": "5,85 metros",
+        "fronteira": [
+          "Roca Sales"," Imigrante"," Vespasiano Corr?a"," Encantado "
+        ]
+      }
