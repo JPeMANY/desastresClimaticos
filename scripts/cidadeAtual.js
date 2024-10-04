@@ -1,5 +1,5 @@
 const regiao = 'Vale Do Taquari';
-const cidade = 'Paverama';
+const cidade = 'Lajeado';
 
 const titulo = document.querySelector('header .titulo h1');
 const subtitulo = document.querySelector('header .titulo span');
