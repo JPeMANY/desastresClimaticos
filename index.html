@@ -18,7 +18,7 @@
                 <h1>Nome da cidade</h1>
                 <span>Região</span>
             </div>
-            <div class="editarRegiao">
+            <div id="btnEditar" class="editarRegiao">
                 <img src="assets/lapisBranco.svg" alt="lapis">
             </div>
         </div>
@@ -100,27 +100,35 @@
 
 
 
-    <div class="login">
-        <div class="container">
-            <label for="regiao">Escolha sua região:</label>
-            <select id="regiao">
-                <option value="1">Vale do Taquari</option>
-                <option value="2">Outra região</option>
-            </select>
-    
-            <label for="cidade">Escolha sua cidade</a>
-            <select id="cidade">
-                <option value="sim">Paverama</option>
-                <option value="nao">Teutônia</option>
-                <option value="">Estrela</option>
-                <option value="">Lajeado</option>
-            </select>
+    <div class="login oculto none">
+        <div class="mensagem">
+            <h3>Bem-vindo</h3>
+
+            <div class="form">
+                <label for="regiao">Escolha sua região:</label>
+                <select id="regiao">
+                    <option value="1">Vale do Taquari</option>
+                    <option value="2">Outra região</option>
+                </select>
+        
+                <label for="cidade">Escolha sua cidade:</label>
+                <select id="cidade">
+                    <option value="paverama">Paverama</option>
+                    <option value="teutonia">Teutônia</option>
+                    <option value="estrela">Estrela</option>
+                    <option value="lajeado">Lajeado</option>
+                </select>
+            </div>
+
+            <button id="btnLogin">Confirmar</button>
         </div>
     </div>
 
     <script src="scripts/inicio.js"></script>
-    <script src="scripts/login.js"></script>
 
     <script src="scripts/cidadeAtual.js"></script>
+
+    <script src="scripts/login.js"></script>
+
 </body>
 </html>
