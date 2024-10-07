@@ -16,7 +16,9 @@ const txtIncendio = cartaoIncendio.querySelector('p');
 const txtEnchente = cartaoEnchente.querySelector('p');
 const txtTempestade = cartaoTempestade.querySelector('p');
 
-fetch(`dados/${regiao.replace(/\s+/g, '')}/${cidade.replace(/\s+/g, '')}.json`)
+const jsonUrl = `dados/${regiao.replace(/\s+/g, '')}/${cidade.replace(/\s+/g, '')}.json?` + new Date().getTime();
+
+fetch(jsonUrl)
     .then(response => response.json()) // Converter a resposta para JSON
     .then(data => {
         
@@ -43,4 +45,8 @@ fetch(`dados/${regiao.replace(/\s+/g, '')}/${cidade.replace(/\s+/g, '')}.json`)
 
     })
     .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+
+
+
+
 
