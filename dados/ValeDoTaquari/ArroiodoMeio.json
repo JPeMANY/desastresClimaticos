@@ -1,0 +1,11 @@
+{
+        "incendio": "Risco 3",
+        "enchente": "Risco 3",
+        "tempestade": "Risco 3",
+        "rio": "Rio Taquari",
+        "alturaLimite": "29 metros",
+        "alturaAtual": "5 metros",
+        "fronteira": [
+          "Capit?o"," Colinas"," Encantado"," Estrela"," Marques de Souza"," Lajeado"," Ro?a Sales"," Santa Clara do Sul"," Travesseiro"
+        ]
+      }
