@@ -15,19 +15,18 @@ if (cidade === null) {
     atualizarInicio();
 }
 
-
 function mostrarMensagem() {
-    login.classList.remove('oculto');
+    login.classList.remove('none');
     setTimeout(()=>{
-        login.classList.remove('none')
-    }, 3000)
+        login.classList.remove('oculto')
+    }, 1000)
 }
 
 function ocultarMensagem() {
     login.classList.add('oculto');
     setTimeout(()=>{
         login.classList.add('none')
-    }, 3000)
+    }, 2000)
 }
 
 btnEditar.addEventListener('click', ()=> {
@@ -48,8 +47,11 @@ btnLogin.addEventListener('click', ()=> {
     atualizarInicio();
 })
 
+fetch('dados/listaCidades.json')
+        .then(response => response.json()) // Converter a resposta para JSON
+        .then(data => {
+            
+        for (let i = 0; i < data.lista.length)
 
-
-/* localStorage.setItem('Nome', nomeUsuario);
-            // Cookie armazenado em variável
-            nomeCookie = localStorage.getItem('Nome'); */
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));

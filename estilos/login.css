@@ -16,7 +16,7 @@
     -webkit-backdrop-filter: blur(7px); 
     backdrop-filter: blur(7px);
     z-index: 1;
-    transition: 2s opacity ease-in-out;
+    transition: 0.5s opacity ease;
 }
 
 .oculto {
