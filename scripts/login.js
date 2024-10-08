@@ -47,7 +47,9 @@ btnLogin.addEventListener('click', ()=> {
     atualizarInicio();
 })
 
-fetch('dados/listaCidades.json')
+
+
+/* fetch('dados/listaCidades.json')
         .then(response => response.json()) // Converter a resposta para JSON
         .then(data => {
             
@@ -55,3 +57,4 @@ fetch('dados/listaCidades.json')
 
         })
         .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+ */
