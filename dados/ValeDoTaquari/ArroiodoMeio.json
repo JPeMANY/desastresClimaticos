@@ -1,1 +1,1 @@
-{ "arquivo": "ArroiodoMeio" }
+"{\n        \"incendio\": \"Risco 0\",\n        \"enchente\": \"Risco 1\",\n        \"tempestade\": \"Risco 2\",\n        \"rio\": \"Rio Taquari\",\n        \"alturaLimite\": \"29 metros\",\n        \"alturaAtual\": \"5 metros\",\n        \"fronteira\": [\n          \"Capitão\",\" Colinas\",\" Encantado\",\" Estrela\",\" Marques de Souza\",\" Lajeado\",\" Roça Sales\",\" Santa Clara do Sul\",\" Travesseiro\"\n        ]\n      }"
