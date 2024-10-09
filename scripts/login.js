@@ -48,6 +48,20 @@ btnLogin.addEventListener('click', ()=> {
 })
 
 
+fetch(`../dados/ValeDoTaquari/listaCidades.json`)
+    .then(response => response.json()) // Converter a resposta para JSON
+    .then(data => {
+
+        // Cria elementos option do select
+        for (let i = 0; i < data.lista.length; i++) {
+            let opcaoLista = document.createElement('option');
+            opcaoLista.text = data.lista[i];
+            cidadeSelect.appendChild(opcaoLista)
+        }
+
+})
+    .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+
 
 /* fetch('dados/listaCidades.json')
         .then(response => response.json()) // Converter a resposta para JSON
