@@ -1,1 +1,1 @@
-{ "arquivo": "Lajeado" }
+"{\n        \"incendio\": \"Risco 1\",\n        \"enchente\": \"Risco 1\",\n        \"tempestade\": \"Risco 1\",\n        \"rio\": \"Rio Taquari\",\n        \"alturaLimite\": \"19 metros\",\n        \"alturaAtual\": \"14 metros\",\n        \"fronteira\": [\n          \"Estrela\",\" Canudos do Vale\",\" Teutônia\",\" Imigrante\",\" Westfalia\"\n        ]\n      }"
