@@ -1,1 +1,1 @@
-{ "arquivo": "AntaGorda" }
+"{\n        \"incendio\": \"Risco 1\",\n        \"enchente\": \"Risco 1\",\n        \"tempestade\": \"Risco 1\",\n        \"rio\": \"Arroio Zeferino\",\n        \"alturaLimite\": \"\",\n        \"alturaAtual\": \"\",\n        \"fronteira\": [\n          \"Arvorezinha\",\" Dois Lajeados\",\" Doutor Ricardo\",\"  Putinga\",\" Relvado\",\" Vespasiano Corrêa\"\n        ]\n      }"
