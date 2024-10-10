@@ -1,1 +1,14 @@
-"{\"incendio\":\"Risco 3\",\"enchente\":\"Risco 3\",\"tempestade\":\"Risco 3\",\"rio\":\"Rio Taquari\",\"alturaLimite\":\"18 metros\",\"alturaAtual\":\"5,85 metros\",\"fronteira\":[\"RocaSales\",\"Imigrante\",\"VespasianoCorrêa\",\"Encantado\"]}"
+{
+  "incendio": "Risco 3",
+  "enchente": "Risco 3",
+  "tempestade": "Risco 3",
+  "rio": "Rio Taquari",
+  "alturaLimite": "18 metros",
+  "alturaAtual": "5,85 metros",
+  "fronteira": [
+    "RocaSales",
+    "Imigrante",
+    "VespasianoCorrêa",
+    "Encantado"
+  ]
+}
