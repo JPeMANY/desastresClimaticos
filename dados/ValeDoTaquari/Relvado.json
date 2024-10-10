@@ -1,1 +1,14 @@
-{ "arquivo": "Relvado" }
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "Arroio Jacaré",
+  "alturaLimite": "",
+  "alturaAtual": "",
+  "fronteira": [
+    "CoqueiroBaixo",
+    "DoutorRicardo",
+    "Encantado",
+    "NovaBrésciaePutinga."
+  ]
+}
