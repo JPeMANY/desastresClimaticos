@@ -1,1 +1,15 @@
-"{\n        \"incendio\": \"Risco 1\",\n        \"enchente\": \"Risco 1\",\n        \"tempestade\": \"Risco 1\",\n        \"rio\": \"Rio Taquari\",\n        \"alturaLimite\": \"19 metros\",\n        \"alturaAtual\": \"14 metros\",\n        \"fronteira\": [\n          \"Estrela\",\" Canudos do Vale\",\" Teutônia\",\" Imigrante\",\" Westfalia\"\n        ]\n      }"
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "Rio Taquari",
+  "alturaLimite": "19 metros",
+  "alturaAtual": "14 metros",
+  "fronteira": [
+    "Estrela",
+    "CanudosdoVale",
+    "Teutônia",
+    "Imigrante",
+    "Westfalia"
+  ]
+}
