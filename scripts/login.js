@@ -48,7 +48,7 @@ btnLogin.addEventListener('click', ()=> {
 })
 
 
-fetch(`../dados/ValeDoTaquari/listaCidades.json`)
+fetch('../dados/ValeDoTaquari/listaCidades.json')
     .then(response => response.json()) // Converter a resposta para JSON
     .then(data => {
 
@@ -61,14 +61,3 @@ fetch(`../dados/ValeDoTaquari/listaCidades.json`)
 
 })
     .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
-
-
-/* fetch('dados/listaCidades.json')
-        .then(response => response.json()) // Converter a resposta para JSON
-        .then(data => {
-            
-        for (let i = 0; i < data.lista.length)
-
-        })
-        .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
- */
