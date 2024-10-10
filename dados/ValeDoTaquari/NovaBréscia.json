@@ -1,1 +1,1 @@
-{ "arquivo": "NovaBréscia" }
+"{\n        \"incendio\": \"Risco 0\",\n        \"enchente\": \"Risco 0\",\n        \"tempestade\": \"Risco 0\",\n        \"rio\": \"Arroio Nova Bréscia \",\n        \"alturaLimite\": \"\",\n        \"alturaAtual\": \"\",\n        \"fronteira\": [\n          \"Encantado\",\" Coqueiro Baixo\",\" Travesseiro e Capitão\"\n        ]\n      }"
