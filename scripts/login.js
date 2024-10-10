@@ -48,7 +48,7 @@ btnLogin.addEventListener('click', ()=> {
 })
 
 
-fetch('../dados/ValeDoTaquari/listaCidades.json')
+fetch('../dados/ValeDoTaquari/cidades/listaCidades.json')
     .then(response => response.json()) // Converter a resposta para JSON
     .then(data => {
 
