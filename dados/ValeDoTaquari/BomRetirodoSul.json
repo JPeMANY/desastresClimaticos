@@ -1,1 +1,15 @@
-{ "arquivo": "BomRetirodoSul" }
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "Rio Taquari",
+  "alturaLimite": "16,5 metros",
+  "alturaAtual": "4 metros",
+  "fronteira": [
+    "CruzeirodoSul",
+    "Estrela",
+    "FazendaVilanova",
+    "Taquari",
+    "VenâncioAires"
+  ]
+}
