@@ -1,14 +1,14 @@
 {
-    "incendio": "Risco 3",
-    "enchente": "Risco 2",
-    "tempestade": "Risco 1",
-    "rio": "false",
-    "alturaLimite": "",
-    "alturaAtual": "",
-    "fronteira": [
-        "Tabaí",
-        "Taquari",
-        "Fazenda Vilanova",
-        "Teutônia"
-    ]
+  "incendio": "Risco 0",
+  "enchente": "Risco 1",
+  "tempestade": "Risco 2",
+  "rio": "false",
+  "alturaLimite": "",
+  "alturaAtual": "",
+  "fronteira": [
+    "Tabaí",
+    "Taquari",
+    "FazendaVilanova",
+    "Teutônia"
+  ]
 }
