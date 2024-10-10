@@ -1,1 +1,14 @@
-{ "arquivo": "CanudosdoVale" }
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "Arroio Forquetinha",
+  "alturaLimite": "",
+  "alturaAtual": "1,30 metros",
+  "fronteira": [
+    "Forquetinha",
+    "MarquesdeSouza",
+    "Progresso",
+    "Sério."
+  ]
+}
