@@ -1,1 +1,12 @@
-{ "arquivo": "Tabaí" }
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "Arroio Santa Cruz",
+  "alturaLimite": "",
+  "alturaAtual": "",
+  "fronteira": [
+    "Paverama",
+    "Taquari"
+  ]
+}
