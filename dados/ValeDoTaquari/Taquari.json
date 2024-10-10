@@ -1,1 +1,12 @@
-{ "arquivo": "Taquari" }
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "Rio Taquari",
+  "alturaLimite": "8,5 metros",
+  "alturaAtual": "2 metros",
+  "fronteira": [
+    "Paverama",
+    "Tabaí"
+  ]
+}
