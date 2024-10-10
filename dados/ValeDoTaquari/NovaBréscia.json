@@ -1,1 +1,13 @@
-"{\"incendio\":\"Risco 0\",\"enchente\":\"Risco 0\",\"tempestade\":\"Risco 0\",\"rio\":\"Arroio Nova Bréscia \",\"alturaLimite\":\"\",\"alturaAtual\":\"\",\"fronteira\":[\"\\\"Encantado\\\",\\\" Coqueiro Baixo\\\",\\\" Travesseiro e Capitão\\\"\"]}"
+{
+  "incendio": "Risco 3",
+  "enchente": "Risco 3",
+  "tempestade": "Risco 3",
+  "rio": "Arroio Nova Bréscia ",
+  "alturaLimite": "",
+  "alturaAtual": "",
+  "fronteira": [
+    "Encantado",
+    "CoqueiroBaixo",
+    "TravesseiroeCapitão"
+  ]
+}
