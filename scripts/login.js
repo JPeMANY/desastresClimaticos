@@ -19,14 +19,14 @@ function mostrarMensagem() {
     login.classList.remove('none');
     setTimeout(()=>{
         login.classList.remove('oculto')
-    }, 1000)
+    }, 500)
 }
 
 function ocultarMensagem() {
     login.classList.add('oculto');
     setTimeout(()=>{
         login.classList.add('none')
-    }, 2000)
+    }, 1000)
 }
 
 btnEditar.addEventListener('click', ()=> {

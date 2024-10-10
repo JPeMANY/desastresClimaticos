@@ -21,6 +21,7 @@
 
 .oculto {
     opacity: 0;
+    transition: 0.5s opacity ease;
 }
 
 .none {
