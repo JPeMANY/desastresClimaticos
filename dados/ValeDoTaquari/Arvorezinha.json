@@ -1,1 +1,16 @@
-{ "arquivo": "Arvorezinha" }
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "false",
+  "alturaLimite": "",
+  "alturaAtual": "",
+  "fronteira": [
+    "AntaGorda",
+    "FontouraXavier",
+    "Guaporé",
+    "Ilópolis",
+    "Itapuca",
+    "Putinga"
+  ]
+}
