@@ -1,1 +1,14 @@
-{ "arquivo": "Putinga" }
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "Arroio Putinga",
+  "alturaLimite": "",
+  "alturaAtual": "",
+  "fronteira": [
+    "AntaGorda",
+    "Arvorezinha",
+    "FontouraXavier",
+    "IlópoliseSãoJosédoHerval."
+  ]
+}
