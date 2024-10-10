@@ -1,1 +1,15 @@
-{ "arquivo": "Colinas" }
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "Rio Taquari",
+  "alturaLimite": "19 metros",
+  "alturaAtual": "4 metros",
+  "fronteira": [
+    "ArroiodoMeio",
+    "Estrela",
+    "Imigrante",
+    "RocaSales",
+    "Teutônia"
+  ]
+}
