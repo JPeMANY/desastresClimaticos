@@ -1,0 +1,12 @@
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "Rio Guaporé ",
+  "alturaLimite": "6 metros",
+  "alturaAtual": "4 metros",
+  "fronteira": [
+    "AntaGorda",
+    "MuçumeVespasianoCorrêa."
+  ]
+}
