@@ -1,1 +1,14 @@
-{ "arquivo": "Itapuca" }
+{
+  "incendio": "Risco 0",
+  "enchente": "Risco 0",
+  "tempestade": "Risco 0",
+  "rio": "false",
+  "alturaLimite": "",
+  "alturaAtual": "",
+  "fronteira": [
+    "Ilópolis",
+    "AntaGorda",
+    "Putinga",
+    "Teutônia"
+  ]
+}
