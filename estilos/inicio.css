@@ -86,32 +86,49 @@ body {
     }
 
       .conteudo .rio {
-        height: 300px;
+        height: 450px;
         overflow: hidden;
         position: relative;
+        padding: 0;
       }
 
-      .conteudo .rio .rioVetor {
-        background-color: var(--azul);
-        height: 100px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        z-index: 0;
-      }
-
-        .conteudo .rio .rioVetor::after {
-          content: '';
-          position: absolute;
-          top: -40%;
+        .conteudo .rio .areaRio {
+          height: 350px;
           width: 100%;
-          background-image: url(../assets/rio.svg);
-          background-repeat: no-repeat;
-          background-position: bottom;
-          background-size: contain;
-          z-index: 1;
-          height: 40px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
         }
+
+        .conteudo .rio span {
+          position: relative;
+          z-index: 1;
+        }
+
+        .conteudo .rio .rioVetor {
+          background-color: var(--azul);
+          height: 90%;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: 0;
+        }
+
+          .conteudo .rio .rioVetor::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-40px);
+            width: 100%;
+            background-image: url(../assets/rio.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            z-index: 0;
+            height: 40px;
+          }
 
   .cartao img {
     filter: saturate(0) opacity(0.2);
