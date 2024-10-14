@@ -16,21 +16,25 @@ function calcularRio(altLim, altAt) {
     altLimHTML.textContent = altLim;
     altAtHTML.textContent = altAt;
 
-    const altLimNumero = Number(altLim.replace(/\D/g, ''));
-    const altAtNumero = Number(altAt.replace(/\D/g, ''));
+    const altLimNumero = Number(altLim.replace(/[^\d,]/g, '').replace(',', '.'));
+    const altAtNumero = Number(altAt.replace(/[^\d,]/g, '').replace(',', '.'));
 
     // Cálculos
 
-    // retira 3 quartos do valor de altura atual de ambos
+    // retira 3 quartos do valor de altura atual e subtrai de ambos
     const desconto = (altAtNumero / 4) * 3;
     const altLimCalc = altLimNumero - desconto;
+    console.log(altLimCalc)
     const altAtCalc = altAtNumero - desconto;
+    console.log(altAtCalc)
+
 
     // Regra de 3
     const altAtPorcentagem = (altAtCalc * 100) / altLimCalc;
 
-    console.log(altAtPorcentagem)
 
+    const rioVetorHTML = document.querySelector('.conteudo .rio .rioVetor');
+    rioVetorHTML.style.height = altAtPorcentagem + '%';
 }
 
 function atualizarInicio() {
@@ -67,6 +71,8 @@ function atualizarInicio() {
                 cartaoRio.style.display = 'none';
             } else {
                 cartaoRio.style.display = 'block';
+                const nomeRio = document.getElementById('nomeRio');
+                nomeRio.textContent = data.rio
                 calcularRio(alturaLimite, alturaAtual);
             }
 

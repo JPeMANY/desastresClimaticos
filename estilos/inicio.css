@@ -89,7 +89,6 @@ body {
         height: 450px;
         overflow: hidden;
         position: relative;
-        padding: 0;
       }
 
         .conteudo .rio .areaRio {
@@ -100,14 +99,37 @@ body {
           left: 0;
         }
 
+        .rio .areaRio svg {
+          width: 20%;
+        }
+
+        .linha {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          gap: 0.5rem;
+          z-index: 1;
+        }
+
+        .linha .spanContainer {
+          transform: translateY(-0.5rem);
+        }
+
         .conteudo .rio span {
           position: relative;
           z-index: 1;
+          font-size: 1rem;
+          line-height: 1rem;
+        }
+
+        .conteudo .rio .spanContainer {
+          display: flex;
+          gap: 0.5rem;
         }
 
         .conteudo .rio .rioVetor {
           background-color: var(--azul);
-          height: 90%;
           width: 100%;
           position: absolute;
           bottom: 0;
@@ -115,17 +137,21 @@ body {
           z-index: 0;
         }
 
+          .rioVetor span {
+            color: white;
+          }
+
           .conteudo .rio .rioVetor::after {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            transform: translateY(-40px);
+            transform: translateY(-38px);
             width: 100%;
             background-image: url(../assets/rio.svg);
             background-repeat: no-repeat;
-            background-position: bottom;
-            background-size: contain;
+            background-position: top;
+            background-size: cover;
             z-index: 0;
             height: 40px;
           }
