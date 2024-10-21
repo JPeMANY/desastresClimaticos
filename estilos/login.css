@@ -2,81 +2,174 @@
     overflow: hidden;
 }
 
-.login {
+#telaCarregamento {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--laranja);
+    z-index: 2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    -webkit-backdrop-filter: blur(7px); 
-    backdrop-filter: blur(7px);
-    z-index: 1;
-    transition: 0.5s opacity ease;
-}
+    gap: 2rem;
+  }
 
-.oculto {
-    opacity: 0;
-    transition: 0.5s opacity ease;
-}
-
-.none {
-    display: none;
-}
-
-    .mensagem {
-        height: 22rem;
-        width: 30rem;
-        border: none;
-        border-radius: 2rem;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
+    #telaCarregamento .logo {
+      position: relative;
+      width: 10rem;
+      height: 10rem;
     }
 
-        .login h3 {
-            margin: 0 0 2rem 0;
-            line-height: 4rem;
-            background-color: var(--azul);
-            width: 100%;
-            text-align: center;
-            color: white;
+      #telaCarregamento .logo img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: 5px solid white;
+        border-radius: 50%;
+      }
+
+      #telaCarregamento .logo .logoExterno {
+        animation: giro 2s ease-in-out 1s 3;
+      }
+
+      @keyframes giro {
+        0% {
+          transform: rotate(0);
         }
 
-        .login .form {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      #telaCarregamento .informacoesLogin {
+        position: relative;
+        width: 70%;
+        height: 2rem;
+        border: 3px solid var(--azulMarinho);
+        border-radius: 1rem;
+        overflow: hidden;
+        animation: expandirBarra 1s ease-in-out 7s forwards;
+      }
+
+        @keyframes expandirBarra {
+            0%{
+                height: 2rem;
+            }
+            100%{
+                height: 25rem;
+            }
+        }
+
+        #telaCarregamento .carregando {
+          position: absolute;
+          left: 0;
+          top: 0;
+          background-color: white;
+          animation: carregar 6s ease-in-out 1s forwards;
+          width: 0;
+          height: 100%;
+          z-index: 1;
+        }
+
+        @keyframes carregar {
+          0% {
+            width: 0%;
+          }
+          100% {
+            width: 100%;
+          }
+        }
+
+        .login {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            width: 80%;
-            gap: 0.3rem;
+            /* position: fixed;
+            top: 0;
+            left: 0; */
+            /* height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.2);
+            opacity: 1;
+            -webkit-backdrop-filter: blur(7px); 
+            backdrop-filter: blur(7px);
+            z-index: 1;
+            transition: 0.5s opacity ease; */
         }
 
-        .login label {
-            width: 100%;
-            text-align: left;
+        .oculto {
+            opacity: 0;
+            transition: 0.5s opacity ease;
         }
 
-        .login select {
-            width: 100%;
-            height: 2rem;
-            border: 2px solid var(--azul);
-            border-radius: 1rem;
-            padding: 0 0.5rem;
-            margin-bottom: 1rem;
+        .none {
+            display: none;
         }
 
-        .login button {
-            width: 10rem;
-            height: 2.3rem;
-            background-color: var(--azul);
-            border: none;
-            border-radius: 1.2rem;
-            color: white;
-            margin: auto 0 1.5rem 0;
-        }
+            .mensagem {
+                height: 22rem;
+                width: 30rem;
+                border: none;
+                border-radius: 2rem;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                z-index: 3;
+                opacity: 0;
+                animation: aparecer 1s ease 8s forwards;
+            }
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+                .login h3 {
+                    line-height: 2rem;
+                    width: 100%;
+                    text-align: center;
+                    color: var(--laranja);
+                }
+
+                .login .form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 80%;
+                    gap: 0.3rem;
+                }
+
+                .login label {
+                    width: 100%;
+                    text-align: left;
+                }
+
+                .login select {
+                    width: 100%;
+                    height: 2rem;
+                    border: 2px solid var(--laranja);
+                    border-radius: 1rem;
+                    padding: 0 0.5rem;
+                    margin-bottom: 2rem;
+                }
+
+                .login button {
+                    width: 15rem;
+                    height: 2.3rem;
+                    background-color: var(--laranja);
+                    border: none;
+                    border-radius: 1.2rem;
+                    color: white;
+                    margin: auto 0 1.5rem 0;
+                }

@@ -18,7 +18,7 @@
                 <h1>Nome da cidade</h1>
                 <span>Região</span>
             </div>
-            <div id="btnEditar" class="editarRegiao">
+            <div class="editarRegiao">
                 <img src="assets/lapisBranco.svg" alt="lapis">
             </div>
         </div>
@@ -112,30 +112,42 @@
         </div>
       </footer> -->
 
+    <div id="telaCarregamento">
+        <div class="logo">
+            <img src="assets/logoInterno.svg" alt="logo">
+            <img class="logoExterno" src="assets/logoExterno.svg" alt="logo">
+        </div>
 
-
-    <div class="login oculto none">
-        <div class="mensagem">
-            <h3>Bem-vindo</h3>
-
-            <div class="form">
-                <label for="regiao">Escolha sua região:</label>
-                <select id="regiao">
-                    <option>Vale do Taquari</option>
-                </select>
+        <div class="informacoesLogin">
         
-                <label for="cidade">Escolha sua cidade:</label>
-                <select id="cidade">
-                </select>
+            <div class="login">
+                <div class="carregando"></div>
+            
+                <div class="mensagem">
+                    <h3>Bem-vindo</h3>
+        
+                    <div class="form">
+                        <label for="regiao">Escolha sua região:</label>
+                        <select id="regiao">
+                            <option>Vale do Taquari</option>
+                        </select>
+                
+                        <label for="cidade">Escolha sua cidade:</label>
+                        <select id="cidade">
+                        </select>
+                    </div>
+        
+                    <button id="btnLogin">Confirmar</button>
+                </div>
             </div>
 
-            <button id="btnLogin">Confirmar</button>
         </div>
+
     </div>
 
     <script src="scripts/inicio.js"></script>
 
-    <script src="scripts/login.js"></script>
+    script src="scripts/login.js"></script>
 
 </body>
 </html>
