@@ -22,15 +22,16 @@ function calcularRio(altLim, altAt) {
     // Cálculos
 
     // retira 3 quartos do valor de altura atual e subtrai de ambos
-    const desconto = (altAtNumero / 4) * 3;
+    /* const desconto = (altAtNumero / 4) * 3;
     const altLimCalc = altLimNumero - desconto;
     console.log(altLimCalc)
     const altAtCalc = altAtNumero - desconto;
     console.log(altAtCalc)
 
-
     // Regra de 3
-    const altAtPorcentagem = (altAtCalc * 100) / altLimCalc;
+    const altAtPorcentagem = (altAtCalc * 100) / altLimCalc; */
+
+    const altAtPorcentagem = (altAtNumero * 100) / altLimNumero;
 
 
     const rioVetorHTML = document.querySelector('.conteudo .rio .rioVetor');
