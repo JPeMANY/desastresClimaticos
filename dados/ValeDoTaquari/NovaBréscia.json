@@ -3,8 +3,8 @@
   "enchente": "Risco 0",
   "tempestade": "Risco 0",
   "rio": "Arroio Nova Bréscia ",
-  "alturaLimite": "",
-  "alturaAtual": "",
+  "alturaLimite": "2 metros",
+  "alturaAtual": "1,77 metros",
   "fronteira": [
     "Encantado",
     "CoqueiroBaixo",
