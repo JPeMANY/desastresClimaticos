@@ -227,17 +227,17 @@ body {
   footer {
     display: flex;
     align-items: center;
-    padding-bottom: 5rem;
     justify-content: center;
-    width: 100%;
+    width: auto;
     background-color: var(--azulMarinho);
     color: white;
     height: 9rem;
     gap: 1rem;
+    padding: 0 3rem 5rem 3rem;
   }
 
     footer .img {
-      height: 3.5rem;
+      height: 4.5rem;
     }
 
       footer .img img {
