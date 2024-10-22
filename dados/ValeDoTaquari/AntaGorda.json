@@ -3,8 +3,8 @@
   "enchente": "Risco 0",
   "tempestade": "Risco 0",
   "rio": "Arroio Zeferino",
-  "alturaLimite": "",
-  "alturaAtual": "",
+  "alturaLimite": "3 metros ",
+  "alturaAtual": "2,73 metros",
   "fronteira": [
     "Arvorezinha",
     "DoisLajeados",
