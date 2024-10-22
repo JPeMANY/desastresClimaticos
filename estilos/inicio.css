@@ -8,13 +8,13 @@ body {
   
   header {
     width: 100%;
-    background-color: var(--azul);
+    background-color: var(--laranja);
     height: 4rem;
     display: flex;
     justify-content: center;
     top: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     border-bottom: 2px solid white;
   }
 
@@ -206,17 +206,47 @@ body {
       border-color: var(--roxo);
     }
 
-  #btnAtualizar {
-    width: 70%;
+  .botoesAcao button {
+    width: 47%;
     height: 3rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 1.5rem;
     color: white;
-    background-color: var(--azul);
+    background-color: var(--cinza);
+  }
+
+  #btnAtualizar {
+    background-color: var(--laranja);
   }
 
   .espacoBranco {
-    height: 150px;
+    height: 12rem;
   }
+
+  footer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5rem;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--azulMarinho);
+    color: white;
+    height: 9rem;
+    gap: 1rem;
+  }
+
+    footer .img {
+      height: 3.5rem;
+    }
+
+      footer .img img {
+        height: 100%;
+      }
+
+    footer p {
+      font-size: 0.7rem;
+    }
 
   /*     #telaCarregamento .logo::before {
       content: '';

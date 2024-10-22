@@ -1,6 +1,5 @@
 const btnLogin = document.getElementById('btnLogin');
 const btnEditar = document.querySelector('.editarRegiao');
-const btnAtualizar = document.getElementById('btnAtualizar');
 
 const login = document.querySelector('.login');
 const telaCarregamento = document.querySelector('.telaCarregamento');
@@ -40,8 +39,6 @@ if (carregamentoLento === 'true') {
     }
 }
 
-
-
 function expandirBarra() {
     telaCarregamento.classList.add('abrirCaixa');
 }
@@ -80,10 +77,7 @@ btnLogin.addEventListener('click', ()=> {
     atualizarInicio();
 })
 
-btnAtualizar.addEventListener('click', ()=> {
-    localStorage.setItem('carregamentoLento', true);
-    location.reload();
-})
+
 
 
 fetch('../dados/ValeDoTaquari/cidades/listaCidades.json')

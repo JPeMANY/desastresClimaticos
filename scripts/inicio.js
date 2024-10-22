@@ -10,6 +10,18 @@ const txtIncendio = cartaoIncendio.querySelector('p');
 const txtEnchente = cartaoEnchente.querySelector('p');
 const txtTempestade = cartaoTempestade.querySelector('p');
 
+const btnAtualizar = document.getElementById('btnAtualizar');
+const btnResetar = document.getElementById('btnResetar');
+
+btnResetar.addEventListener('click', ()=> {
+    localStorage.clear();
+})
+
+btnAtualizar.addEventListener('click', ()=> {
+    localStorage.setItem('carregamentoLento', true);
+    location.reload();
+})
+
 function calcularRio(altLim, altAt) {
     const altLimHTML = document.getElementById('valorAltLim');
     const altAtHTML = document.getElementById('valorAltAt');
@@ -80,3 +92,30 @@ function atualizarInicio() {
         })
         .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
 } 
+
+/* // NOTIFICAÇÕES --------------------
+
+if (permission !== "granted") {
+    pedirPermissao();
+}
+
+function pedirPermissao() {
+    // Verificar suporte
+    if (!("Notification" in window)) {
+        alert("Este navegador não suporta notificações de desktop.");
+    } else {
+        // Pedir permissão ao usuário
+        Notification.requestPermission().then(function(permission) {
+            alert('Notificações ativadas');
+        });
+    }
+}
+
+function enviarNotificacao(titulo, corpo) {
+    if (Notification.permission === "granted") {
+        new Notification(titulo, {
+            body: corpo,
+            icon: 'assets/logoSosClima.svg'
+        });
+    }
+} */
