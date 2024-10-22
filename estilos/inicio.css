@@ -206,6 +206,14 @@ body {
       border-color: var(--roxo);
     }
 
+  #btnAtualizar {
+    width: 70%;
+    height: 3rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--azul);
+  }
+
   .espacoBranco {
     height: 150px;
   }

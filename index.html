@@ -87,6 +87,10 @@
 
         </div>
 
+        <div>
+            <button id="btnAtualizar" type="button">Atualizar página</button>
+        </div>
+
         <div class="espacoBranco"></div>
       </div>
       
@@ -112,42 +116,38 @@
         </div>
       </footer> -->
 
-    <div id="telaCarregamento">
+    <div class="telaCarregamento carregar">
         <div class="logo">
             <img src="assets/logoInterno.svg" alt="logo">
             <img class="logoExterno" src="assets/logoExterno.svg" alt="logo">
         </div>
 
-        <div class="informacoesLogin">
+        <div class="login">
+            <div class="carregando"></div>
         
-            <div class="login">
-                <div class="carregando"></div>
+            <div class="mensagem">
+                <h3>Bem-vindo</h3>
+    
+                <div class="form">
+                    <label for="regiao">Escolha sua região:</label>
+                    <select id="regiao">
+                        <option>Vale do Taquari</option>
+                    </select>
             
-                <div class="mensagem">
-                    <h3>Bem-vindo</h3>
-        
-                    <div class="form">
-                        <label for="regiao">Escolha sua região:</label>
-                        <select id="regiao">
-                            <option>Vale do Taquari</option>
-                        </select>
-                
-                        <label for="cidade">Escolha sua cidade:</label>
-                        <select id="cidade">
-                        </select>
-                    </div>
-        
-                    <button id="btnLogin">Confirmar</button>
+                    <label for="cidade">Escolha sua cidade:</label>
+                    <select id="cidade">
+                    </select>
                 </div>
+    
+                <button id="btnLogin">Confirmar</button>
             </div>
-
         </div>
 
     </div>
 
     <script src="scripts/inicio.js"></script>
 
-    script src="scripts/login.js"></script>
+    <script src="scripts/login.js"></script>
 
 </body>
 </html>

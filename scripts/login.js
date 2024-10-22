@@ -1,40 +1,73 @@
 const btnLogin = document.getElementById('btnLogin');
-const btnEditar = document.getElementById('btnEditar');
+const btnEditar = document.querySelector('.editarRegiao');
+const btnAtualizar = document.getElementById('btnAtualizar');
 
 const login = document.querySelector('.login');
+const telaCarregamento = document.querySelector('.telaCarregamento');
 
 const regiaoSelect = document.getElementById('regiao');
 const cidadeSelect = document.getElementById('cidade');
 
 let regiao = localStorage.getItem('Região')
 let cidade = localStorage.getItem('Cidade');
+let carregamentoLento = localStorage.getItem('carregamentoLento');
 
-if (cidade === null) {
-    mostrarMensagem();
+console.log(carregamentoLento)
+
+if (carregamentoLento === 'true') {
+    console.log('hello world')
+    telaCarregamento.classList.remove('carregar');
+    telaCarregamento.classList.add('carregamentoLento');
+    localStorage.setItem('carregamentoLento', false);
+
+    setTimeout(()=> {
+        expandirBarra();
+        telaCarregamento.classList.remove('carregamentoLento');
+    }, 16000)
+
+
 } else {
-    atualizarInicio();
+
+    if (cidade === null) {
+        setTimeout(()=> {
+            expandirBarra();
+        }, 7000)
+    } else {
+        atualizarInicio();
+        setTimeout(()=> {
+            fecharLogin();
+        }, 7500);
+    }
 }
 
-function mostrarMensagem() {
-    login.classList.remove('none');
+
+
+function expandirBarra() {
+    telaCarregamento.classList.add('abrirCaixa');
+}
+
+function abrirLogin() {
+    telaCarregamento.classList.remove('carregar');
+    telaCarregamento.classList.remove('none');
     setTimeout(()=>{
-        login.classList.remove('oculto')
+        telaCarregamento.classList.remove('oculto')
     }, 500)
 }
 
-function ocultarMensagem() {
-    login.classList.add('oculto');
+function fecharLogin() {
+    telaCarregamento.classList.add('oculto');
     setTimeout(()=>{
-        login.classList.add('none')
+        telaCarregamento.classList.add('none')
     }, 1000)
 }
 
 btnEditar.addEventListener('click', ()=> {
-    mostrarMensagem();
+    abrirLogin();
+    expandirBarra();
 })
 
 btnLogin.addEventListener('click', ()=> {
-    ocultarMensagem();
+    fecharLogin();
 
     const regiaoValor = regiaoSelect.options[regiaoSelect.selectedIndex].text;
     const cidadeValor = cidadeSelect.options[cidadeSelect.selectedIndex].text;
@@ -45,6 +78,11 @@ btnLogin.addEventListener('click', ()=> {
     regiao = regiaoValor;
     cidade = cidadeValor;
     atualizarInicio();
+})
+
+btnAtualizar.addEventListener('click', ()=> {
+    localStorage.setItem('carregamentoLento', true);
+    location.reload();
 })
 
 
