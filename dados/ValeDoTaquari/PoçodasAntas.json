@@ -3,8 +3,8 @@
   "enchente": "Risco 0",
   "tempestade": "Risco 0",
   "rio": "Arroio Boa Vista",
-  "alturaLimite": "",
-  "alturaAtual": "",
+  "alturaLimite": "5 metros",
+  "alturaAtual": "4,53 metros",
   "fronteira": [
     "Teutônia"
   ]
