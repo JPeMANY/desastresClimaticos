@@ -43,11 +43,24 @@ function calcularRio(altLim, altAt) {
     // Regra de 3
     const altAtPorcentagem = (altAtCalc * 100) / altLimCalc; */
 
-    const altAtPorcentagem = (altAtNumero * 100) / altLimNumero;
-
-
+    const linhaAlturaLimite = document.querySelector('.alturaLimite');
     const rioVetorHTML = document.querySelector('.conteudo .rio .rioVetor');
-    rioVetorHTML.style.height = altAtPorcentagem + '%';
+
+    if (altLimNumero > altAtNumero) {
+        const altAtPorcentagem = (altAtNumero * 100) / altLimNumero;
+        linhaAlturaLimite.style.height = '100%';
+        rioVetorHTML.style.height = altAtPorcentagem + '%';
+
+    } else {
+        const altAtPorcentagem = (altLimNumero * 100) / altAtNumero;
+        rioVetorHTML.style.height = '100%';
+        linhaAlturaLimite.style.height = altAtPorcentagem + '%';
+    }
+
+
+    //const altAtPorcentagem = (altAtNumero * 100) / altLimNumero;
+
+    
 }
 
 function atualizarInicio() {

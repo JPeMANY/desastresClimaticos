@@ -102,11 +102,12 @@ body {
 
         .rio .areaRio svg {
           width: 20%;
+          height: 2px;
         }
 
         .linha {
           position: absolute;
-          top: 0;
+          bottom: 0;
           left: 0;
           display: flex;
           gap: 0.5rem;
@@ -115,6 +116,11 @@ body {
 
         .linha .spanContainer {
           transform: translateY(-0.5rem);
+        }
+
+        .linhaAlturaAtual {
+          bottom: auto;
+          top: 0;
         }
 
         .conteudo .rio span {
