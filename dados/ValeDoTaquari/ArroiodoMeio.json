@@ -1,7 +1,7 @@
 {
-  "incendio": "Risco 0",
-  "enchente": "Risco 0",
-  "tempestade": "Risco 0",
+  "incendio": "Risco 3",
+  "enchente": "Risco 3",
+  "tempestade": "Risco 3",
   "rio": "Rio Taquari",
   "alturaLimite": "29 metros",
   "alturaAtual": "5 metros",
