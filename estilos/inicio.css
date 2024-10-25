@@ -234,12 +234,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
+    width: 70%;
     background-color: var(--azulMarinho);
     color: white;
     height: 9rem;
     gap: 1rem;
-    padding: 0 3rem 5rem 3rem;
+    padding: 0 15% 5rem 15%;
   }
 
     footer .img {
