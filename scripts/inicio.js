@@ -92,6 +92,37 @@ function atualizarInicio() {
             cartaoEnchente.classList.add(enchente.replace(/\s+/g, '').toLowerCase());
             cartaoTempestade.classList.add(tempestade.replace(/\s+/g, '').toLowerCase());
 
+            // -----------
+
+            const msnAlert = document.querySelector('.alertaTxt');
+
+            const grauIncendio = Number(incendio.replace(/[^\d,]/g, ''));
+            const grauEnchente = Number(enchente.replace(/[^\d,]/g, ''));
+            const grauTempestade = Number(tempestade.replace(/[^\d,]/g, ''));
+
+            console.log(grauIncendio, grauEnchente, grauTempestade)
+
+            const incendioAlerta = document.querySelector('.incendioAlerta');
+            const enchenteAlerta = document.querySelector('.enchenteAlerta');
+            const tempestadeAlerta = document.querySelector('.tempestadeAlerta');
+
+            if (grauIncendio === 3) {
+                msnAlert.style.display = 'block';
+                incendioAlerta.style.display = 'flex';
+            }
+
+            if (grauEnchente === 3) {
+                msnAlert.style.display = 'block';
+                enchenteAlerta.style.display = 'flex';
+            }
+
+            if (grauTempestade === 3) {
+                console.log('jel')
+                msnAlert.style.display = 'block';
+                tempestadeAlerta.style.display = 'flex';
+            }
+
+
             // Estilo cartão rio
             if (rio === "false") {
                 cartaoRio.style.display = 'none';
@@ -104,7 +135,34 @@ function atualizarInicio() {
 
         })
         .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
-} 
+}
+
+const avisoRioTela = document.getElementById('avisoRioTela');
+
+const gatilhoRio = document.getElementById('gatilhoRio');
+const som = new Audio('../assets/somAlerta.mp3');
+
+let avisoRio = 0;
+
+gatilhoRio.addEventListener('click', ()=> {
+    avisoRio += 1;
+
+    console.log(avisoRio)
+
+    if (avisoRio === 5) {
+        som.play();
+        avisoRio = 0;
+
+        avisoRioTela.style.display = 'flex';
+        setTimeout(()=> {
+            avisoRioTela.style.opacity = '0';
+            setTimeout(()=> {
+                avisoRioTela.style.display = 'none';
+            },500)
+        }, 5000)
+    }
+})
+
 
 /* // NOTIFICAÇÕES --------------------
 

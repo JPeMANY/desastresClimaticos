@@ -60,7 +60,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
   }
 
     .cartao {
@@ -70,6 +69,7 @@ body {
       border: 2px solid var(--cinza);
       border-radius: 15px;
       padding: 1rem;
+      margin-bottom: 1rem;
     }
 
     .cartao h2 {
@@ -173,6 +173,47 @@ body {
 
   .risco2 img:nth-child(1), 
   .risco2 img:nth-child(2) {
+    filter: none;
+  }
+
+/*   .risco2 img:nth-child(3) {
+    filter: saturate(3) opacity(0.3) brightness(0.3);
+  } */
+
+/*   .risco2 {
+    opacity: 0.7;
+  } */
+
+  .risco3 img:nth-child(1), 
+  .risco3 img:nth-child(2), 
+  .risco3 img:nth-child(3) {
+    filter: none;
+  }
+
+/*   .risco3 {
+    color: white;
+  } */
+
+/*     .risco2.incendio,
+    .risco3.incendio {
+      background-color: var(--vermelho);
+      border-color: var(--vermelho);
+    }
+
+    .risco2.enchente,
+    .risco3.enchente {
+      background-color: var(--azul);
+      border-color: var(--azul);
+    }
+
+    .risco2.tempestade,
+    .risco3.tempestade {
+      background-color: var(--roxo);
+      border-color: var(--roxo);
+    } */
+
+    /*   .risco2 img:nth-child(1), 
+  .risco2 img:nth-child(2) {
     filter: saturate(3) opacity(1) brightness(0.3);
   }
 
@@ -210,7 +251,7 @@ body {
     .risco3.tempestade {
       background-color: var(--roxo);
       border-color: var(--roxo);
-    }
+    } */
 
   .botoesAcao button {
     width: 47%;
@@ -230,7 +271,7 @@ body {
     height: 12rem;
   }
 
-  footer {
+  .rodape {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,55 +283,146 @@ body {
     padding: 0 15% 5rem 15%;
   }
 
-    footer .img {
+    .rodape .img {
       height: 4.5rem;
     }
 
-      footer .img img {
+      .rodape .img img {
         height: 100%;
       }
 
-    footer p {
+    .rodape p {
       font-size: 0.7rem;
     }
 
-  /*     #telaCarregamento .logo::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: 120%;
-      width: 120%;
-      background-color: white;
-    } */
+    .alertaTxt {
+      line-height: 1.5rem;
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+      background-color: var(--laranja);
+      color: white;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+.alertaLink {
+  width: 90%;
+}
   
-  /* footer {
-    position: fixed;
-    width: 100%;
-    bottom: 2px;
-    height: 3rem;
+.alerta {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+  .alerta .informacoes {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
   }
-  
-  footer div {
-    height: 100%;
-    width: 25%;
-    background-color: white;
-    border-top: 2px solid var(--cinza);
+
+  .alerta .informacoes .iconAlerta {
+    filter: invert(1) brightness(5);
+    width: 5rem;
+    height: auto;
+  }
+
+  .alerta .texto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-right: auto;
   }
 
-    footer img {
-      height: 60%;
+    .alerta .texto .desastre {
+      font-size: 1.5rem;
+      font-weight: 700;
     }
 
-    footer span {
-      font-size: 0.7rem;
-    } */
-  
+
+  .alerta .textoBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+    .alerta .textoBtn img {
+      filter: invert(1);
+      width: 2rem;
+      height: auto;
+    }
+
+    .alerta .textoBtn span {
+      font-size: 0.6rem;
+      width: 5rem;
+      text-align: center;
+    }
+
+.incendioAlerta {
+  background-color: var(--vermelho);
+  border-color: var(--vermelho);
+}
+
+.enchenteAlerta {
+  background-color: var(--azul);
+  border-color: var(--azul);
+}
+
+.tempestadeAlerta {
+  background-color: var(--roxo);
+  border-color: var(--roxo);
+}
+
+#avisoRioTela {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--azul);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+  #avisoRioTela div {
+    margin-top: 5rem;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+  }
+
+    #avisoRioTela h4 {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+      #avisoRioTela h4 span {
+        font-size: 2.8rem;
+      }
+
+    #avisoRioTela div img {
+      width: 23rem;
+      filter: invert(1) brightness(5);
+    }
+
+    #avisoRioTela .legenda {
+      font-size: 1.3rem;
+    }
+
+.none {
+  display: none;
+}

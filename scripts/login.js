@@ -14,7 +14,6 @@ let carregamentoLento = localStorage.getItem('carregamentoLento');
 console.log(carregamentoLento)
 
 if (carregamentoLento === 'true') {
-    console.log('hello world')
     telaCarregamento.classList.remove('carregar');
     telaCarregamento.classList.add('carregamentoLento');
     localStorage.setItem('carregamentoLento', false);

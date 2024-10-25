@@ -16,3 +16,44 @@
 button {
     cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 3;
+  }
+
+  footer a {
+    height: 100%;
+    width: 25%;
+    color: black;
+  }
+  
+  footer div {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-top: 2px solid var(--cinza);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    footer img {
+      height: 60%;
+    }
+
+    footer span {
+      font-size: 0.7rem;
+    }

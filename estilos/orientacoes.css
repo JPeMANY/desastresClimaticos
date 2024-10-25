@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+    box-sizing: border-box; /* Garante que padding não adicione ao tamanho total */
+}
+
+
+.incendio {
+    background-color: var(--vermelho);
+}
+
+.enchente {
+    background-color: var(--azul);
+}
+
+.tempestade {
+    background-color: var(--roxo);
+}
+
+h1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+ul {
+    color: white;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+li {
+    margin-bottom: 2rem;
+}

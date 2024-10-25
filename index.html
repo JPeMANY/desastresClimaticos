@@ -29,6 +29,55 @@
       <div class="espacoInicial"></div>
       
       <div class="conteudo">
+
+        <div class="alertaTxt none"><span>ALERTA!</span></div>
+
+        <a class="alertaLink" href="orientacoesIncendio.html"><div class="alerta cartao incendioAlerta none">
+            <div class="informacoes">
+                <img class="iconAlerta" src="assets/incendio.gif" alt="alertImg">
+                <div class="texto">
+                    <span class="desastre">Incêndio</span>
+                    <span class="risco">Risco 3</span>
+                </div>
+
+                <div class="textoBtn">
+                    <img class="mapa" src="assets/mapa.png" alt="mapa">
+                    <span>Clique para ver orientações</span>
+                </div>
+            </div>
+        </div></a>
+
+        <a class="alertaLink" href="orientacoesEnchente.html"><div class="alerta cartao enchenteAlerta none">
+            <div class="informacoes">
+                <img class="iconAlerta" src="assets/enchente.gif" alt="alertImg">
+                <div class="texto">
+                    <span class="desastre">Enchente</span>
+                    <span class="risco">Risco 3</span>
+                </div>
+
+                <div class="textoBtn">
+                    <img class="mapa" src="assets/mapa.png" alt="mapa">
+                    <span>Clique para ver orientações</span>
+                </div>
+            </div>
+        </div></a>
+
+        <a class="alertaLink" href="orientacoesTempestade.html"><div class="alerta cartao tempestadeAlerta none">
+            <div class="informacoes">
+                <img class="iconAlerta" src="assets/tempestade.gif" alt="alertImg">
+                <div class="texto">
+                    <span class="desastre">Tempestade</span>
+                    <span class="risco">Risco 3</span>
+                </div>
+
+                <div class="textoBtn">
+                    <img class="mapa" src="assets/mapa.png" alt="mapa">
+                    <span>Clique para ver orientações</span>
+                </div>
+            </div>
+        </div></a>
+
+
         <div id="cartaoIncendio" class="cartao incendio">
             <div>
                 <h2>Incêndio</h2>
@@ -97,37 +146,54 @@
         <div class="espacoBranco"></div>
       </div>
 
-      <footer>
-        <div class="img"><img src="assets/logoSosClima.svg" alt="logo"></div>
+
+
+
+      <div class="rodape">
+        <div id="gatilhoRio" class="img"><img src="assets/logoSosClima.svg" alt="logo"></div>
         <div class="txt">
             <p>SOS Clima® 2024 - Todos os Direitos Reservados</p>
             <p>Desenvolvido para o projeto da turma do 2° EMA, EEEMPA</p>
         </div>
-      </footer>
+      </div>
+
+
+      <div id="avisoRioTela none">
+        <div>
+            <h4>Alerta de<span>Enchente</span></h4>
+            <img src="assets/enchenteCarro.gif" alt="enchente">
+            <span class="legenda">O rio transbordou!</span>
+        </div>
+      </div>
+
+
       
-      <!-- <footer>
-        <div class='inicio'>
+      <footer>
+        <a href="index.html"><div class='inicio'>
           <img src="assets/casaCinza.svg" alt="casaIcon">
           <span>Início</span>
-        </div>
+        </div></a>
         
-        <div class='enchente'>
+        <a href="orientacoesEnchente.html"><div class='enchente'>
           <img src="assets/aguaCinza.svg" alt="aguaIcon">
           <span>Enchentes</span>
-        </div>
+        </div></a>
         
-        <div class='incendio'>
+        <a href="orientacoesIncendio.html"><div class='incendio'>
           <img src="assets/fogoCinza.svg" alt="fogoIcon">
           <span>Incêndio</span>
-        </div>
+        </div></a>
         
-        <div class='tempestade'>
+        <a href="orientacoesTempestade.html"><div class='tempestade'>
           <img src="assets/nuvemCinza.svg" alt="nuvemIcon">
           <span>Tempestade</span>
-        </div>
-      </footer> -->
+        </div></a>
+      </footer>
 
-    <div class="telaCarregamento carregar">
+
+
+
+    <div class="telaCarregamento carregar none">
         <div class="logo">
             <img src="assets/logoInterno.svg" alt="logo">
             <img class="logoExterno" src="assets/logoExterno.svg" alt="logo">
