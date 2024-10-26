@@ -7,15 +7,15 @@ body {
 }
 
 
-.incendio {
+.incendioBack {
     background-color: var(--vermelho);
 }
 
-.enchente {
+.enchenteBack {
     background-color: var(--azul);
 }
 
-.tempestade {
+.tempestadeBack {
     background-color: var(--roxo);
 }
 

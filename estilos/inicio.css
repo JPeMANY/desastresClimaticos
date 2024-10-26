@@ -378,7 +378,7 @@ body {
   border-color: var(--roxo);
 }
 
-#avisoRioTela {
+.avisoRioTela {
   position: fixed;
   top: 0;
   left: 0;
@@ -389,10 +389,10 @@ body {
   display: flex;
   justify-content: center;
   transition: all 1s ease;
-  opacity: 1;
+  opacity: 0;
 }
 
-  #avisoRioTela div {
+  .avisoRioTela div {
     margin-top: 5rem;
     width: 80%;
     height: 60%;
@@ -403,23 +403,23 @@ body {
     color: white;
   }
 
-    #avisoRioTela h4 {
+    .avisoRioTela h4 {
       font-size: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-      #avisoRioTela h4 span {
+      .avisoRioTela h4 span {
         font-size: 2.8rem;
       }
 
-    #avisoRioTela div img {
+    .avisoRioTela div img {
       width: 23rem;
       filter: invert(1) brightness(5);
     }
 
-    #avisoRioTela .legenda {
+    .avisoRioTela .legenda {
       font-size: 1.3rem;
     }
 

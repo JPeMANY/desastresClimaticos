@@ -137,7 +137,7 @@ function atualizarInicio() {
         .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
 }
 
-const avisoRioTela = document.getElementById('avisoRioTela');
+const avisoRioTela = document.querySelector('.avisoRioTela');
 
 const gatilhoRio = document.getElementById('gatilhoRio');
 const som = new Audio('../assets/somAlerta.mp3');
@@ -153,7 +153,11 @@ gatilhoRio.addEventListener('click', ()=> {
         som.play();
         avisoRio = 0;
 
+
         avisoRioTela.style.display = 'flex';
+        setTimeout(()=> {
+            avisoRioTela.style.opacity = '1';
+        }, 500)
         setTimeout(()=> {
             avisoRioTela.style.opacity = '0';
             setTimeout(()=> {
