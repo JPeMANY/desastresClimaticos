@@ -1,6 +1,6 @@
 {
-  "incendio": "Risco 1",
-  "enchente": "Risco 3",
+  "incendio": "Risco 3",
+  "enchente": "Risco 0",
   "tempestade": "Risco 0",
   "rio": "false",
   "alturaLimite": "",
