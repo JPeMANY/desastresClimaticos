@@ -109,17 +109,25 @@ function atualizarInicio() {
             if (grauIncendio === 3) {
                 msnAlert.style.display = 'block';
                 incendioAlerta.style.display = 'flex';
+            } else {
+                msnAlert.style.display = 'none';
+                incendioAlerta.style.display = 'none';
             }
 
             if (grauEnchente === 3) {
                 msnAlert.style.display = 'block';
                 enchenteAlerta.style.display = 'flex';
+            } else {
+                msnAlert.style.display = 'none';
+                enchenteAlerta.style.display = 'none';
             }
 
             if (grauTempestade === 3) {
-                console.log('jel')
                 msnAlert.style.display = 'block';
                 tempestadeAlerta.style.display = 'flex';
+            } else {
+                msnAlert.style.display = 'none';
+                tempestadeAlerta.style.display = 'none';
             }
 
 
@@ -136,6 +144,8 @@ function atualizarInicio() {
         })
         .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
 }
+
+
 
 const avisoRioTela = document.querySelector('.avisoRioTela');
 
